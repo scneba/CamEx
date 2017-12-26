@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/bar_add_content"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="@string/add_content" />
+        <item
+            android:id="@+id/bar_feedback"
+            android:icon="@android:drawable/ic_menu_rotate"
+            android:title="@string/feedback" />
+        <item
+            android:id="@+id/bar_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/share" />
+        <item
+            android:id="@+id/bar_favourites"
+            android:icon="@android:drawable/star_big_on"
+            android:title="@string/favourite" />
+        <item
+            android:id="@+id/bar_log_out"
+            android:icon="@android:drawable/ic_lock_idle_lock"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name" translatable="false">CamEx</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="baseUrl" translatable="false">http://camex.cf</string>
+    <string name="imageUrl" translatable="false">http://camex.cf/camexproject/public</string>
+    <!--
+        <string name="baseUrl" translatable="false">http://192.168.43.36/camexProject/camexProject/public</string>
+        <string name="imageUrl" translatable="false">http://192.168.43.36/camexProject/camexProject/public</string>
+        -->
+
+
+    <string name="facebook_app_id" translatable="false">xxxxxxx</string>
+    <string name="updates" translatable="false">updates</string>
+
+
+    <!--content descriptions-->
+    <string name="imageDesc">Image for item</string>
+    <string name="ratingBarDesc">Rating bar for item</string>
+    <string name="progress_desc">Progress Indicator</string>
+    <string name="no_int_desc">Internet problem image view</string>
+    <string name="fbDesc">Login with facebook</string>
+    <string name="gmailDesc">Login with Gmail</string>
+    <string name="emailDesc">Input your email</string>
+    <string name="usernameDesc">Input your user name</string>
+    <string name="submitDesc">Submit button</string>
+    <string name="prev_item">Previous Item</string>
+    <string name="next_item">Next Item</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="music">Music</string>
+    <string name="movies">Movies</string>
+    <string name="fashion">Fashion</string>
+    <string name="tourism">Tourism</string>
+    <string name="music_long">Listen to Latest Cameroon Music</string>
+    <string name="movies_long">Watch Latest Movie Trailers</string>
+    <string name="fashion_long">See Cameroon Fashion Designs</string>
+    <string name="tourism_long">See Touristic Sites in Cameroon</string>
+
+    <string name="search">Search</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="top_like">Top Liked</string>
+    <string name="top_viewed">Top Viewed</string>
+
+    <string name="gospel">Gospel</string>
+    <string name="traditional">Traditional</string>
+    <string name="secular">Secular</string>
+
+    <string name="views">Views</string>
+    <string name="ratings">Ratings</string>
+    <string name="likes">Likes</string>
+
+    <string name="connection_timeout">Connection Time out</string>
+    <string name="failed_server">Failed to connect to server</string>
+    <string name="no_int">No internet connection detected</string>
+
+    <string name="transition_name">transition_name</string>
+    <string name="open_in_youtube">Open in Youtube Application</string>
+
+    <string name="username">User Name</string>
+    <string name="email">Email</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="reload">Reload</string>
+    <string name="exit">Exit</string>
+
+
+    <string name="success_add_fav">Successfully added to favourites</string>
+    <string name="success_remove_fav">Successfully removed from  favourites</string>
+
+    <string name="unable_insert">Unable to insert data to database</string>
+    <string name="unable_remove">Unable to remove from favourite</string>
+    <string name="url" translatable="false">www.camex2.com</string>
+
+
+    <string name="login">Login</string>
+    <string name="required">Required</string>
+    <string name="erremail">Invalid email address</string>
+
+    <string name="log_into_app">Log into CamEx</string>
+
+    <string name="login_direct">Or Login Directly</string>
+    <string name="continue_google">Continue with Google</string>
+    <string name="submitting">Submitting to database....</string>
+
+    <string name="message">Message</string>
+    <string name="login_success">Login Successful</string>
+
+    <string name="fb_error">Login error</string>
+    <string name="connection_cancelled">Connection Cancelled</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="camex_fav">CamEx Favourites</string>
+
+
+    <string name="no_fav">No Favourites</string>
+
+    <string name="starring">Starring</string>
+    <string name="contacts">Contacts</string>
+    <string name="neww">New</string>
+
+
+    <!--navigation drawer-->
+    <string name="add_content">Add content</string>
+
+    <string name="feedback">Feedback</string>
+
+    <string name="share">Share</string>
+    <string name="favourite">Favourites</string>
+    <string name="logout">Logout</string>
+    <string name="user_logged_out">User successfully Logged out</string>
+    <string name="close_page">Close Page</string>
+    <string name="login_with_fb">Login with Facebook</string>
+    <string name="login_with_gmail">Login with Gmail</string>
+
+
+</resources>

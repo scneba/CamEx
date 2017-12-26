@@ -1,0 +1,52 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">25dp</dimen>
+    <dimen name="activity_vertical_margin">25dp</dimen>
+
+    <dimen name="activity_horizontal_margin_recycler">20dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--Home activity dimensions -->
+    <dimen name="homeActivityPadding">20dp</dimen>
+    <dimen name="button_height">75dp</dimen>
+    <dimen name="buttonTextSize">16sp</dimen>
+    <dimen name="catTextSize">30sp</dimen>
+    <dimen name="homeSeparateMargin">40dp</dimen>
+    <dimen name="homeGroupMargin">6dp</dimen>
+    <dimen name="homePaddingTop">30dp</dimen>
+
+    <dimen name="cardPadding">8dp</dimen>
+    <dimen name="cardImageHeight">100dp</dimen>
+    <dimen name="cardTextSize">14sp</dimen>
+    <dimen name="cardItemsSeparation">6dp</dimen>
+
+    <dimen name="reoladTextSize">14sp</dimen>
+    <dimen name="likeTextSize">12sp</dimen>
+
+    <dimen name="youtubeview_height">200dp</dimen>
+
+    <dimen name="youtube_images_dimens">30dp</dimen>
+
+    <dimen name="details_imv_height">180dp</dimen>
+
+    <dimen name="star_height">45dp</dimen>
+
+    <dimen name="like_image_height">40dp</dimen>
+
+    <dimen name="progress_bar_height">45dp</dimen>
+
+    <dimen name="login_button_height">50dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+
+
+</resources>
+
+
+

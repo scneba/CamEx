@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thestk.camex">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/search" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.homeActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MusicActivity"
+            android:label="@string/music"
+            android:theme="@style/AppTheme.homeActivityTheme"></activity>
+        <activity
+            android:name=".MoviesActivity"
+            android:label="@string/movies"
+            android:theme="@style/AppTheme.homeActivityTheme"></activity>
+        <activity
+            android:name=".FashionActivity"
+            android:label="@string/fashion"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".TourismActivity"
+            android:label="@string/tourism"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".MusicDetailsActivity"
+            android:label="@string/music"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/login"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".FavouriteMusicActivity"
+            android:label="@string/favourite"
+            android:theme="@style/AppTheme.homeActivityTheme"></activity>
+
+        <activity
+            android:name=".MovieDetailsActivity"
+            android:label="@string/favourite"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <provider
+            android:name=".database.DataProvider"
+            android:authorities="com.thestk.camex.data"
+            android:exported="true" />
+
+        <service
+            android:name=".web.DatabaseUpdateService"
+            android:exported="true" />
+
+        <service
+            android:name=".AppWidgetService"
+            android:exported="true" />
+
+        <service
+            android:name=".GridViewService"
+            android:exported="true"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <service android:name=".web.FCMNotifyService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".WidgetManager">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_manager_info" />
+        </receiver>
+    </application>
+
+</manifest>

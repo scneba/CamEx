@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thestk.camex.HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.thestk.camex.HomeActivity">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/homePaddingTop"
+            android:paddingEnd="@dimen/homeActivityPadding"
+            android:paddingLeft="@dimen/homeActivityPadding"
+            android:paddingRight="@dimen/homeActivityPadding"
+            android:paddingStart="@dimen/homeActivityPadding"
+            android:paddingTop="@dimen/homePaddingTop">
+
+            <TextView
+                android:id="@+id/tvmusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/music"
+                android:text="@string/music"
+                android:textSize="@dimen/catTextSize"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnMusic"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/homeGroupMargin"
+                android:background="@drawable/button_selector"
+
+                android:contentDescription="@string/music"
+                android:text="@string/music_long"
+                android:textColor="@color/buttonTextColor"
+                android:textSize="@dimen/buttonTextSize"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvmusic" />
+
+            <TextView
+                android:id="@+id/tvMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/homeSeparateMargin"
+                android:contentDescription="@string/movies"
+                android:text="@string/movies"
+                android:textSize="@dimen/catTextSize"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnMusic" />
+
+
+            <Button
+                android:id="@+id/btnMovies"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/homeGroupMargin"
+                android:background="@drawable/button_selector"
+                android:contentDescription="@string/movies_long"
+                android:text="@string/movies_long"
+                android:textColor="@color/buttonTextColor"
+                android:textSize="@dimen/buttonTextSize"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMovies"
+                app:layout_constraintVertical_bias="0.545" />
+
+
+            <TextView
+                android:id="@+id/tvFashion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="@dimen/homeSeparateMargin"
+                android:contentDescription="@string/fashion"
+                android:text="@string/fashion"
+                android:textSize="@dimen/catTextSize"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnMovies"
+                tools:layout_editor_absoluteY="246dp" />
+
+
+            <Button
+                android:id="@+id/btnFashion"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/homeGroupMargin"
+                android:background="@drawable/button_selector"
+                android:contentDescription="@string/fashion_long"
+                android:text="@string/fashion_long"
+                android:textColor="@color/buttonTextColor"
+                android:textSize="@dimen/buttonTextSize"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFashion" />
+
+
+            <TextView
+                android:id="@+id/tvTourism"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/homeSeparateMargin"
+                android:contentDescription="@string/movies"
+                android:text="@string/movies"
+                android:textSize="@dimen/catTextSize"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnFashion" />
+
+
+            <Button
+                android:id="@+id/btnTourism"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="@dimen/homeGroupMargin"
+                android:background="@drawable/button_selector"
+                android:contentDescription="@string/tourism_long"
+                android:text="@string/tourism_long"
+                android:textColor="@color/buttonTextColor"
+                android:textSize="@dimen/buttonTextSize"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTourism" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+    .
+
+</android.support.design.widget.CoordinatorLayout>

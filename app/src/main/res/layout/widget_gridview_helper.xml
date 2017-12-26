@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_relativell"
+    android:layout_width="100dp"
+    android:layout_height="60dp"
+    android:background="@drawable/widget_grid_selector"
+    android:orientation="vertical"
+    android:padding="@dimen/cardPadding">
+
+    <TextView
+        android:id="@+id/music_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thumbnail"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/cardTextSize"
+        tools:text="Mado by Locko ft Mr.Leo" />
+
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/music_title"
+        android:clickable="false"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/cardTextSize"
+        tools:text="Music" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "1006437367788",
+    "firebase_url": "https://camex-182404.firebaseio.com",
+    "project_id": "camex-182404",
+    "storage_bucket": "camex-182404.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006437367788:android:0d804ee51aa07c6e",
+        "android_client_info": {
+          "package_name": "com.thestk.camex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006437367788-j82s4781vab8qn81rjlapivdgm6m8t0b.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1006437367788-b0gop4ci7jkk35b490juup2dd3b8q8qd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thestk.camex",
+            "certificate_hash": "9e6003a1d3df630565db8138fa65bbc1ee0d9779"
+          }
+        },
+        {
+          "client_id": "1006437367788-jso0hitreohqqd0v018rqvqcr28v81jt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3K9dC6DkNMQHtgxcTqpzeTORTuV2jdfk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006437367788-j82s4781vab8qn81rjlapivdgm6m8t0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

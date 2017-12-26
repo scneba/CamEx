@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:transitionName="@string/transition_name" />
+
+    <ProgressBar
+        android:id="@+id/pbload"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="@dimen/progress_bar_height"
+        android:layout_height="@dimen/progress_bar_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="300dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/progress_desc"
+        android:indeterminate="false"
+        android:visibility="visible" />
+
+
+    <ScrollView
+
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.thestk.camex.MovieDetailsActivity">
+
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/content_ctore_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingEnd="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingTop="0dp">
+            <!--android:layoutAnimation="@anim/normal_enter_from_below"
+            -->
+
+
+            <TextView
+                android:id="@+id/tvtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:ellipsize="end"
+
+                android:maxLines="2"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                tools:text="Locko ft. Mr leo, je t'aimerai avec tout tes force"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/cardTextSize"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/views_imv"
+                android:layout_width="@dimen/like_image_height"
+                android:layout_height="@dimen/like_image_height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardview_selector"
+                android:contentDescription="@string/views"
+                android:src="@drawable/view_image"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvtitle" />
+
+            <ImageView
+                android:id="@+id/likes_imv"
+                android:layout_width="@dimen/like_image_height"
+                android:layout_height="@dimen/like_image_height"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/cardview_selector"
+                android:clickable="false"
+                android:contentDescription="@string/likes"
+                android:padding="2dp"
+                android:src="@drawable/like_icon"
+                app:layout_constraintLeft_toRightOf="@+id/views_imv"
+                app:layout_constraintTop_toTopOf="@+id/views_imv" />
+
+            <ImageView
+                android:id="@+id/share_imv"
+                android:layout_width="@dimen/like_image_height"
+                android:layout_height="@dimen/like_image_height"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/cardview_selector"
+                android:contentDescription="@string/share"
+                android:src="@drawable/ic_menu_share"
+                app:layout_constraintLeft_toRightOf="@+id/likes_imv"
+                app:layout_constraintTop_toTopOf="@+id/views_imv" />
+
+            <RatingBar
+                android:id="@+id/rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvtitle"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:clickable="true"
+                android:contentDescription="@string/ratingBarDesc"
+                android:isIndicator="false"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="1"
+                app:layout_constraintHorizontal_bias="0.442"
+                app:layout_constraintLeft_toRightOf="@+id/share_imv"
+                app:layout_constraintRight_toLeftOf="@+id/favStar"
+                app:layout_constraintTop_toTopOf="@+id/views_imv" />
+
+
+            <ImageView
+                android:id="@+id/favStar"
+                android:layout_width="@dimen/star_height"
+                android:layout_height="@dimen/star_height"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/cardview_selector"
+                android:contentDescription="@string/favourite"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvtitle"
+                app:srcCompat="@android:drawable/star_big_off" />
+
+            <TextView
+                android:id="@+id/tv_views"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLength="10"
+                android:maxLines="1"
+                tools:text="9000M"
+                android:textSize="@dimen/likeTextSize"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/views_imv" />
+
+            <TextView
+                android:id="@+id/tv_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLength="10"
+                android:maxLines="1"
+                tools:text="TextView"
+                app:layout_constraintLeft_toLeftOf="@+id/likes_imv"
+                app:layout_constraintTop_toBottomOf="@+id/likes_imv" />
+
+            <TextView
+                android:id="@+id/play_with_youtube"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_selector"
+                android:drawableLeft="@drawable/ic_menu_slideshow"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_menu_slideshow"
+                android:gravity="left|center"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:src="@drawable/ic_menu_slideshow"
+                android:text="@string/open_in_youtube"
+                android:textSize="@dimen/cardTextSize"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_likes" />
+
+            <TextView
+                android:id="@+id/tv_synopsis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                tools:text="coolllllll"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/play_with_youtube" />
+
+            <TextView
+                android:id="@+id/tv_artist_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/starring"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_synopsis" />
+
+            <TextView
+                android:id="@+id/tv_artists"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                tools:text="coolllllll"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_artist_label" />
+
+            <TextView
+                android:id="@+id/tv_contacts_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/contacts"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_artists" />
+
+            <TextView
+                android:id="@+id/tv_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="2dp"
+                tools:text="coolllllll"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_contacts_label" />
+
+            <ImageView
+                android:id="@+id/imv_previous_pic"
+                android:layout_width="@dimen/details_imv_height"
+                android:layout_height="@dimen/details_imv_height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardview_selector"
+                android:contentDescription="@string/prev_item"
+                android:src="@drawable/ic_menu_camera"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_contacts" />
+
+            <ImageView
+                android:id="@+id/imv_next_pic"
+                android:layout_width="@dimen/details_imv_height"
+                android:layout_height="@dimen/details_imv_height"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cardview_selector"
+                android:contentDescription="@string/next_item"
+                android:src="@drawable/ic_menu_camera"
+                app:layout_constraintHorizontal_bias="0.474"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_contacts" />
+
+            <TextView
+                android:id="@+id/tv_previous_music"
+                android:layout_width="@dimen/details_imv_height"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                tools:text="TextView"
+                android:textSize="@dimen/cardTextSize"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imv_previous_pic" />
+
+            <TextView
+                android:id="@+id/tv_next_music"
+                android:layout_width="@dimen/details_imv_height"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+
+                tools:text="TextView"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imv_next_pic" />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
